@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./../static/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./../static/apple-touch-icon-180x180.png" />
+  <title>myProtfolio</title>
+  <link rel="stylesheet" href="./../assets/index-d33c064b.css">
+  <link rel="stylesheet" href="./../src/index.scss">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <div class="icon">
+      <img src="./../icon.png">
+    </div>
+    <h1><a href="./../index.html">ユウキのポートフォリオ</a></h1>
+  </div>
+  <ol class="menu">
+    <li><a href="./../index.html#profile">プロフィール<a></li>
+    <li><a href="./../index.html#skill">スキル</a></li>
+    <li><a href="./../index.html#achievement">実績</a></li>
+    <li><a href="./../index.html#works">制作物</a></li>
+  </ol>
+</header>
+<main id="page">
+  <div>
+    <h2>たまこねくしょんアプリ</h2>
+    <p>アプリはこちらのリンクから利用できます。<a href="https://tama-connect.com">https://tama-connect.com</a></p>
+    <p>たまこねくしょんアプリとは多摩地域のならではの魅力や思い出を写真から投稿する地域密着型写真投稿SNSアプリです。</p>
+    <p>多摩地域外や多摩地域について深く知らない人に利用してもらい多摩の魅力と簡単に繋がれるようになることが目的のアプリです。</p>
+    <div class="img">
+      <img src="./../static/page/tamaApp/value.jpg" alt="価値">
+    </div>
+  </div>
+  <div>
+    <h3>タグの紹介</h3>
+    <p>たまこねくしょんアプリには4つのタグがあり、このタグから写真を投稿したり検索してもらうことでより気軽多摩の情報へアクセスできるようにすることが目的です。</p>
+    <p>①たまファームタグ：野菜の収穫体験や農家が収穫した野菜などを投稿するタグである</p>
+    <p>②たまさんぽ：多摩地域を散歩中に見つけた美しい多摩地域の景色や豊かな自然おを投稿するタグである</p>
+    <p>③お土産：多摩地域限定の工芸品や多摩地域でしか買えないお菓子などを投稿するタグである</p>
+    <p>④グルメ：多摩地域ならではのご当地グルメを投稿するタグである</p>
+    <div class="img">
+      <img src="./../static/page/tamaApp/function.jpg" alt="プレスリリース">
+    </div>
+  </div>
+  <div>
+    <h3>アプリの構成図</h3>
+    <p>このアプリはバックエンドとフロントエンド、webサーバーに分かれています。</p>
+    <p>バックエンドにはDBとしてMongoDBとバックエンドのサーバーとしてFastAPIを利用しています。MongoDBを採用した理由としては、今後の機能の拡張を考慮しスケーラビリティ性の高いNoSQLを採用しました。FastAPIによってREST APIによるJson形式にしてフロントエンド側へ出力します。</p>
+    <p>フロントエンドではReactを利用しています。バックエンドからJson形式のデータを受け取っています。</p>
+    <div class="img">
+      <img src="./../static/page/tamaApp/composition.png" alt="構成図">
+    </div>
+  </div>
+  <div>
+    <h3>ARカメラ</h3>
+    <p>たまこねくしょんアプリにはARカメラ機能を搭載しています。ARカメラには3つのモードがあります。</p>
+    <h4>稲城なしのすけと記念撮影をしよう</h4>
+    <p>稲城なしのすけとは大河原邦男博士と井上ジェット博士に、“稲城の梨”をモチーフに創ってもらった梨型メカです。ARカメラでは稲城なしのすけと一緒に記念撮影をすることができます。</p>
+    <h4>東伏見稲荷神社で白狐を撮影</h4>
+    <p>東伏見稲荷とは京都の伏見稲荷大社の御分霊を奉迎し、昭和4年に東京都西東京市で創建された神社です。拝殿で神の使い手である白狐と記念撮影を撮ったり、ARカメラで千本鳥居にいる白狐を探してみましょう。</p>
+    <div class="img">
+      <img src="./../static/page/tamaApp/AR.jpg" alt="ARカメラ">
+    </div>
+  </div>
+</main>
+<footer>
+  <h2>ポートフォリオ</h2>
+  <div class="pages">
+    <div class="page">
+      <h3>ページ</h3>
+      <ol>
+        <li><a href="./pr.html">自己PR</a></li>
+        <li><a href="./awards.html">受賞歴</a></li>
+        <li><a href="./openbadge.html">オープンバッジ</a></li>
+      </ol>
+    </div>
+    <div class="works">
+      <h3>制作物</h3>
+      <div class="links">
+        <ol>
+          <li><a href="./tamaApp.html">たまこねくしょんアプリ</a></li>
+          <li><a href="./lecture.html">授業・実験</a></li>
+          <li><a href="./homepage.html">ホームページ</a></li>
+          <li><a href="./research.html">研究活動</a></li>
+        </ol>
+        <ol>
+          <li><a href="./smart-alarm.html">スマートアラーム</a></li>
+          <li><a href="./radio.html">ラジオ出演</a></li>
+          <li><a href="./robot.html">ラジコン型ロボット</a></li>
+          <li><a href="./robotVideo.html">ロボット研究部紹介動画</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

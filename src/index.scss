@@ -1,0 +1,153 @@
+@import url(./main.scss);
+@import url(./pr.scss);
+@import url(./awards.scss);
+@import url(./openbadge.scss);
+@import url(./page.scss);
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap');
+
+* {
+  font-family: 'BIZ UDGothic', sans-serif;
+
+  h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 5px auto;
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  li {
+    margin: 20px 0;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  #text-box {
+    box-shadow: 0 5px 7px 0 rgba(64, 64, 64, .5);
+  }
+
+  #text-box:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s linear;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    margin: 12px 25px;
+
+    .icon {
+      width: 30px;
+      margin-right: 10px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  ol {
+    display: flex;
+    margin: 15px 25px;
+
+    li {
+      margin: 0 10px;
+      border: 1px solid black;
+      border-radius: 7px;
+      padding: 3px 8px;
+      text-align: center;
+      a:hover {text-decoration: none;}
+    }
+
+    li:hover {
+      background-color: #999;
+    }
+  }
+
+}
+
+main {
+  background: url(./../public/static/texture.png);
+  background-size: contain;
+}
+
+footer {
+
+  h2, h3 {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0;
+  }
+
+  .pages {
+    display: flex;
+
+    .page, .works {
+      margin: 0 30px;
+
+      li {
+        margin: 4px 2px;
+      }
+    }
+
+    .links {
+      display: flex;
+      ol {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+header {
+  flex-direction: column;
+
+  ol {
+    justify-content: space-around;
+    margin: 0 17px;
+
+    li {
+      margin: 0 2px;
+    }
+  }
+}
+
+footer {
+  .pages {
+    flex-direction: column;
+    .page, .works {
+      margin: 5px 20px;
+
+      .links {
+        flex-direction: column;
+      }
+    }
+  }
+}
+}

@@ -1,0 +1,268 @@
+.index {
+.profile {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 5%;
+
+  .my-image {
+    width: 300px;
+    margin: auto 30px;
+  }
+
+  .my-text {
+    div {
+      margin: 40px 0;
+
+      p, ul {
+        margin: 3px 10px;
+
+        li {
+          display: flex;
+          height: 20px;
+          font-size: 1.1rem;
+          line-height: 20px;
+
+          img { 
+            width: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.skill {
+  .self-pr {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+
+    .pr-img {
+      width: 20%;
+      margin: auto 5%;
+    }
+
+    .text {
+      width: 400px;
+      height: 90%;
+      padding: 15px 30px;
+      border-radius: 20px;
+      margin: auto 1%;
+      background-color: white;
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        line-height: 1.8rem;
+      }
+
+      h4 {
+        text-align: right;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .develop {
+    background: url(./../public/static/main/develop.jpg) no-repeat;
+    background-size: cover;
+    
+    .develop-box {
+      display: flex;
+      justify-content: center;
+      height: 400px;
+      margin: 20px auto;
+
+      .program, .tool {
+        width: 350px;
+        margin: auto 30px;
+        background-color: white;
+        padding: 15px 30px;
+        border-radius: 20px;
+
+        ul {
+          margin-left: 10px;
+        }
+
+        h4 {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.achievement {
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 350px;
+    height: 350px;
+    margin: 0 5%;
+    padding: 5px 20px;
+    border-radius: 20px;
+
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    ul {
+      height: 180px;
+
+      li {
+        margin: 20px 0;
+      }
+    }
+
+    p {
+      text-align: right;
+    }
+  }
+
+  .awards {
+    background: url(./../public/static/main/jason.jpg);
+    background-size: cover;
+  }
+
+  .openbadge {
+    background: url(./../public/static/main/matt-seymour.jpg);
+    background-size: cover;
+  }
+
+  #text-box.awards:hover {
+    box-shadow: 0 7px 17px 0 #009fb5;
+    transition: background-color 3s linear;
+  }
+
+  #text-box.openbadge:hover {
+    box-shadow: 0 7px 17px 0 #feb101;
+    transition: background-color 3s linear;
+  }
+}
+
+.works {
+  .buttons {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin: 5px 10px;
+      padding: 10px 20px;
+      border: 1px solid black;
+      border-radius: 20px;
+    }
+
+    #cheacked {
+      background-color: #e0e0e0;
+    }
+  }
+
+  .pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+
+    .page {
+      width: 400px;
+      height: 300px;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 20px;
+      margin: 20px 10px;
+      padding: 15px;
+
+      .page-img{
+        width: 260px;
+        height: 150px;
+        margin: 10px auto;
+        overflow: hidden;
+      }
+
+      .page-text {
+        display: flex;
+        width: 330px;
+        justify-content: space-between;
+        margin: 5px auto;
+        
+        p {
+          width: 250px;
+          margin: 2px auto;
+        }
+
+        .link {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          background-color: white;
+          border-radius: 50%;
+          font-weight: 900;
+        }
+
+        a:hover { text-decoration: none; }
+      }
+    }
+
+    #service { background-color: #d3ffa8; }
+    #robot { background-color: #a8ffff; }
+    #other { background-color: #ffd4a8; }
+  }
+}
+}
+
+@media screen and (max-width: 480px) {
+.index {
+  .profile {
+    flex-direction: column;
+    .my-image, .my-text {
+      margin: 20px;
+    }
+  }
+
+  .skill {
+    .self-pr {
+      flex-direction: column;
+      height: 550px;
+
+      .pr-img {
+        width: 40%;
+        margin: 10px auto;
+      }
+
+      .text {
+        width: 350px;
+        margin: 0 auto;
+      }
+    }
+
+    .develop .develop-box {
+      flex-direction: column;
+      height: 600px;
+      .program, .tool {
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .achievement {
+    flex-direction: column;
+    .awards, .openbadge {
+      margin: 20px auto;
+    }
+  }
+
+  .works {
+    .buttons {
+      flex-wrap: wrap;
+    }
+  }
+}
+}

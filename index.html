@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./public/static/favicon.ico"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/static/apple-touch-icon-180x180.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>myProtfolio</title>
+  <link rel="stylesheet" href="./src/destyle.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="icon">
+        <img src="./../public/icon.png">
+      </div>
+      <h1><a href="./index.html">ユウキのポートフォリオ</a></h1>
+    </div>
+    <ol class="menu">
+      <li><a href="index.html#profile">プロフィール<a></li>
+      <li><a href="index.html#skill">スキル</a></li>
+      <li><a href="index.html#achievement">実績</a></li>
+      <li><a href="index.html#works">制作物</a></li>
+    </ol>
+  </header>
+  <article>
+  <main class="index">
+    <section id="profile">
+      <h2>プロフィール</h2>
+      <div class="profile">
+        <div class="my-image">
+          <img src="./public/static/main/my-image.jpg" alt="自画像">
+        </div>
+        <div class="my-text">
+          <div class="my-name">
+            <h3>ニックネーム</h3>
+            <p>ユウキ</p>
+          </div>
+          <div>
+            <h3>出身大学</h3>
+            <p>東京工科大学<br>コンピュータサイエンス学部<br>先進情報専攻<br>学部3年</p>
+          </div>
+          <div class="my-hobby">
+            <h3>趣味</h3>
+            <p>読書・旅行先の食べ物の写真を撮ること</p>
+          </div>
+          <div class="my-link">
+            <h3>リンク</h3>
+            <ul>
+              <li><img src="./public/static/main/link/mail.png" alt="mail"><a href="mailto:c0a2113061@edu.teu.ac.jp">c0a2113061@edu.teu.ac.jp</a></li>
+              <li><img src="./public/static/main/link/github.png" alt="github"><a href="https://github.com/C0A21130">ユウキのGitHub</a></li>
+              <li><img src="./public/static/main/link/Facebook.png" alt="facebook"><a href="https://m.facebook.com/profile.php?id=100088553509061">ユウキのFacebook</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skill">
+      <h2>スキル</h2>
+      <div class="skill">
+        <div class="self-pr">
+          <div class="pr-img">
+            <img src="./public/static/main/mobile_encryption.svg" alt="pr">
+          </div>
+          <div class="text" id="text-box">
+            <h3>発信力</h3>
+            <p>大学では多摩の魅力と顧客ニーズを掛け合わせたアプリ開発や実際の企業と連携したサービス提供の楽しさや難しさを体験しました。この経験をもとに顧客の「本当に欲しかった」の願いを叶えるサービスの提案を行います。</p>
+            <h4><a href="./pages/pr.html">詳しくはこちら></a></h4>
+          </div>
+        </div>
+        <div class="develop">
+          <div class="develop-box">
+          <div class="program" id="text-box">
+            <h3>プログラム言語</h3>
+            <ul>
+              <li>TypeScript/JavaScript</li>
+              <li>Python</li>
+              <li>C言語</li>
+              <li>(Solidity)</li>
+            </ul>
+            <h4><a href="index.html#works">作品例></a></h4>
+          </div>
+          <div class="tool" id="text-box">
+            <h3>ツール</h3>
+            <ul>
+              <li>Docker</li>
+              <li>Visual Studio Code</li>
+              <li>MongoDB</li>
+              <li>GitHub</li>
+            </ul>
+            <h4><a href="index.html#achievement">スキル証明></a></h4>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="achievement">
+      <h2>実績</h2>
+      <div class="achievement">
+        <div class="awards" id="text-box">
+          <h3>受賞歴</h3>
+          <ul>
+            <li>多摩マイクロツーリズムコンテスト優秀賞</li>
+            <li>コンソーシアム八王子</li>
+            <li>学長賞・学部長賞</li>
+          </ul>
+          <p><a href="./pages/awards.html">詳しくはこちら></a></p>
+        </div>
+        <div class="openbadge" id="text-box">
+          <h3>オープンバッジ</h3>
+          <ul>
+            <li>システム開発プロセス実践</li>
+            <li>システム開発プロセス</li>
+            <li>価値創造プロセス</li>
+            <li>学部長賞</li>
+          </ul>
+          <p><a href="./pages/openbadge.html">詳しくはこちら></a></p>
+        </div>
+      </div>
+    </section>
+    <section id="works">
+      <h2>制作物</h2>
+      <div class="works"></div>
+    </section>
+  </main>
+  </article>
+  <footer>
+    <h2>ポートフォリオ</h2>
+    <div class="pages">
+      <div class="page">
+        <h3>ページ</h3>
+        <ol>
+          <li><a href="./pages/pr.html">自己PR</a></li>
+          <li><a href="./pages/awards.html">受賞歴</a></li>
+          <li><a href="./pages/openbadge.html">オープンバッジ</a></li>
+        </ol>
+      </div>
+      <div class="works">
+        <h3>制作物</h3>
+        <div class="links">
+          <ol>
+            <li><a href="./pages/tamaApp.html">たまこねくしょんアプリ</a></li>
+            <li><a href="./pages/lecture.html">授業・実験</a></li>
+            <li><a href="./pages/homepage.html">ホームページ</a></li>
+            <li><a href="./pages/research.html">研究活動</a></li>
+          </ol>
+          <ol>
+            <li><a href="./pages/smart-alarm.html">スマートアラーム</a></li>
+            <li><a href="./pages/radio.html">ラジオ出演</a></li>
+            <li><a href="./pages/robot.html">ラジコン型ロボット</a></li>
+            <li><a href="./pages/robotVideo.html">ロボット研究部紹介動画</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
