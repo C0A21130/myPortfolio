@@ -19,21 +19,26 @@
 
 }
 
+// パソコン表示
 @media screen and (min-width: 481px) {
 #page {
+
   h3, h4, p, ul, .img, .video {
-    width: 500px;
+    width: 700px;
     margin: 15px auto;
+    padding-bottom: 15px;
   }
 }
 }
 
+// スマホ表示
 @media screen and (max-width: 480px) {
 #page {
 
   h3, h4, p, ul, .img, .video {
     width: 310px;
-    margin: 10px auto;
+    margin: 20px auto;
+    padding-bottom: 10px;
   }
 }
 }
