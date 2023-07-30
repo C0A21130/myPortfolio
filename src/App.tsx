@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Works from "./Works.ts"
 
-const IMG_URL = "./../public/static/page/";
-const URL ="./pages/"
+const IMG_URL = import.meta.env.VITE_IMG_URL;
+const URL = import.meta.env.VITE_URL;
 
 function App() {
   const [tag, setTag] = useState<Tag>("all");
